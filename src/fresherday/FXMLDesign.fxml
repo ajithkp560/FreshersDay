@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="finishx" prefHeight="786.0" prefWidth="1366.0" style="-fx-background-color: #0f0f0f;" xmlns="http://javafx.com/javafx/8" fx:controller="fresherday.FXMLDocumentController" onKeyPressed="#KeyPressed" onKeyReleased="#KeyRel">
+   <children>
+      <AnchorPane fx:id="anim"  prefHeight="786.0" prefWidth="1366.0">
+          <children>
+            <Text fx:id="Left" layoutX="10" layoutY="20" text="AJITH" style="-fx-text-fill:#ff00ff;-fx-font-family:'Algerian';-fx-font-size:15px;"   >
+          </Text></children>
+      </AnchorPane>
+      <AnchorPane fx:id="stage1" prefHeight="786.0" prefWidth="1366.0">
+         <children>
+               <ImageView fx:id="fre" fitHeight="1000" fitWidth="1200" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+               <ImageView fx:id="day" fitHeight="200" fitWidth="300" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+               <Button id="start" fx:id="start" layoutX="0.0" layoutY="0.0" onAction="#startClicked" stylesheets="@button.css" text="START">
+                   <font>
+                       <Font name="Jokerman" size="38.0" />
+                   </font>
+               </Button>
+        </children>
+      </AnchorPane>
+      <AnchorPane fx:id="stage2" prefHeight="786.0" prefWidth="1366.0">
+          <children>
+               <ImageView fx:id="single" fitHeight="400" fitWidth="300" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+                   <effect>
+                        <DropShadow offsetX="5.0" offsetY="5.0" />
+                    </effect>
+               </ImageView>
+               <ImageView fx:id="group" fitHeight="400" fitWidth="300" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">                   <effect>
+                        <DropShadow offsetX="5.0" offsetY="5.0" />
+                    </effect>
+               </ImageView>
+          </children>
+      </AnchorPane>
+      
+      <AnchorPane  fx:id="dialog" prefHeight="786.0" prefWidth="1366.0">
+            <children>
+                <AnchorPane fx:id="one" prefHeight="786.0" prefWidth="1366.0">
+                    <children>
+                        <Rectangle fx:id="singlerec" width="300" height="350" layoutX="550" layoutY="125" opacity="0.4" />
+                        <ImageView fx:id="singleimg" fitHeight="100" fitWidth="100" layoutX="650" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="singlename" prefWidth="300.0" prefHeight="20.0" layoutX="550" layoutY="280" textAlignment="CENTER" text="AJITH" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="singleclass" prefWidth="300.0" prefHeight="20.0" layoutX="550" layoutY="320" textAlignment="CENTER" text="MCA LE" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="singlehobbie" prefWidth="300.0" prefHeight="40.0" layoutX="550" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="two" prefHeight="786.0" prefWidth="1366.0">
+                    <children>
+                        <Rectangle fx:id="group2one" width="300" height="350" layoutX="300" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group2two" width="300" height="350" layoutX="800" layoutY="125" opacity="0.4" />
+                        <ImageView fx:id="photo2one" fitHeight="100" fitWidth="100" layoutX="400" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo2two" fitHeight="100" fitWidth="100" layoutX="900" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name2one" prefWidth="300.0" prefHeight="20.0" layoutX="300" layoutY="280" textAlignment="CENTER" text="AJITH" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name2two" prefWidth="300.0" prefHeight="20.0" layoutX="800" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class2one" prefWidth="300.0" prefHeight="20.0" layoutX="300" layoutY="320" textAlignment="CENTER" text="MCA LE" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie2one" prefWidth="300.0" prefHeight="20.0" layoutX="300" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class2two" prefWidth="300.0" prefHeight="20.0" layoutX="800" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie2two" prefWidth="300.0" prefHeight="20.0" layoutX="800" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button onAction="#reload2One"  fx:id="re2One" id="black" text="R" layoutX="415" layoutY="400"   />
+                        <Button onAction="#reload2Two" fx:id="re2Two" id="black" text="R" layoutX="915" layoutY="400"   />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="three" prefHeight="786.0" prefWidth="1366.0">
+                    <children>
+                        <Rectangle fx:id="group3one" width="300" height="350" layoutX="70" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group3two" width="300" height="350" layoutX="550" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group3three"  width="300" height="350" layoutX="1000" layoutY="125" opacity="0.4" />
+                        <ImageView fx:id="photo3one" fitHeight="100" fitWidth="100" layoutX="170" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo3two" fitHeight="100" fitWidth="100" layoutX="650" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo3three" fitHeight="100" fitWidth="100" layoutX="1100" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name3one" prefWidth="300.0" prefHeight="20.0" layoutX="70" layoutY="280" textAlignment="CENTER" text="AJITH" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class3one" prefWidth="300.0" prefHeight="20.0" layoutX="70" layoutY="320" textAlignment="CENTER" text="MCA LE" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie3one" prefWidth="300.0" prefHeight="20.0" layoutX="70" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name3two" prefWidth="300.0" prefHeight="20.0" layoutX="550" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class3two" prefWidth="300.0" prefHeight="20.0" layoutX="550" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie3two" prefWidth="300.0" prefHeight="20.0" layoutX="550" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name3three" prefWidth="300" prefHeight="20.0" layoutX="1000" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class3three" prefWidth="300.0" prefHeight="20.0" layoutX="1000" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie3three" prefWidth="300.0" prefHeight="20.0" layoutX="1000" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button onAction="#reload3One" fx:id="re3One" id="black" text="R" layoutX="185" layoutY="400"   />
+                        <Button onAction="#reload3Two" fx:id="re3Two" id="black" text="R" layoutX="665" layoutY="400"   />
+                        <Button onAction="#reload3Three" fx:id="re3Three" id="black" text="R" layoutX="1115" layoutY="400"   />
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="four" prefHeight="786.0" prefWidth="1366.0">
+                    <children>
+                        <Rectangle fx:id="group4one" width="300" height="350" layoutX="40" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group4two" width="300" height="350" layoutX="370" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group4three"  width="300" height="350" layoutX="700" layoutY="125" opacity="0.4" />
+                        <Rectangle fx:id="group4four"  width="300" height="350" layoutX="1030" layoutY="125" opacity="0.4" />
+                        <ImageView fx:id="photo4one" fitHeight="100" fitWidth="100" layoutX="140" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo4two" fitHeight="100" fitWidth="100" layoutX="470" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo4three" fitHeight="100" fitWidth="100" layoutX="800" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fx:id="photo4four" fitHeight="100" fitWidth="100" layoutX="1130" layoutY="150" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="name4one" prefWidth="300.0" prefHeight="20.0" layoutX="40" layoutY="280" textAlignment="CENTER" text="AJITH" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class4one" prefWidth="300.0" prefHeight="20.0" layoutX="40" layoutY="320" textAlignment="CENTER" text="MCA LE" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie4one" prefWidth="300.0" prefHeight="20.0" layoutX="40" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name4two" prefWidth="300.0" prefHeight="20.0" layoutX="370" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class4two" prefWidth="300.0" prefHeight="20.0" layoutX="370" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie4two" prefWidth="300.0" prefHeight="20.0" layoutX="370" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name4three" prefWidth="300" prefHeight="20.0" layoutX="700" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class4three" prefWidth="300.0" prefHeight="20.0" layoutX="700" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie4three" prefWidth="300.0" prefHeight="20.0" layoutX="700" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="name4four" prefWidth="300" prefHeight="20.0" layoutX="1030" layoutY="280" textAlignment="CENTER" text="DILNA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="class4four" prefWidth="300.0" prefHeight="20.0" layoutX="1030" layoutY="320" textAlignment="CENTER" text="MCA" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="hobbie4four" prefWidth="300.0" prefHeight="20.0" layoutX="1030" layoutY="360" textAlignment="CENTER" style="-fx-text-fill:#4d9e0b;" >
+                            <font>
+                                <Font name="Jokerman" size="20.0" />
+                            </font>
+                        </Label>
+                        
+                        <Button onAction="#reload4One" fx:id="re4One" id="black" text="R" layoutX="155" layoutY="400"   />
+                        <Button onAction="#reload4Two" fx:id="re4Two" id="black" text="R" layoutX="485" layoutY="400"   />
+                        <Button onAction="#reload4Three" fx:id="re4Three" id="black" text="R" layoutX="815" layoutY="400"   />
+                        <Button onAction="#reload4Four" fx:id="re4Four" id="black" text="R" layoutX="1145" layoutY="400"   />
+                    </children>
+                </AnchorPane>
+                <BorderPane fx:id="menu" id="background" prefWidth="580" prefHeight="60.0" >
+                    <top>
+                    <ToolBar>
+                    <Region styleClass="spacer" />
+                    <HBox styleClass="segmented-button-bar">
+                    <Button fx:id="twoB" onAction="#selectTwo"  text="Two" styleClass="first" />
+                    <Button fx:id="threeB" onAction="#selectThree" text="Three" />
+                    <Button fx:id="fourB" onAction="#selectFour" text="Four" />
+                    <Button onAction="#closeGame" text="Close" styleClass="last" />
+                    </HBox>
+                    </ToolBar>
+                    </top>
+                </BorderPane>
+                <BorderPane fx:id="singlemenu" id="background" prefWidth="580" prefHeight="60.0" >
+                    <top>
+                    <ToolBar>
+                    <Region styleClass="spacer" />
+                    <HBox styleClass="segmented-button-bar">
+                    <Button fx:id="singleB" onAction="#reloadSingle" text="Reload" styleClass="first" />
+                    <Button onAction="#closeGame" text="Close" styleClass="last" />
+                    </HBox>
+                    </ToolBar>
+                    </top>
+                </BorderPane>
+                <Label fx:id="kitty" layoutY="550"  prefHeight="100" prefWidth="1366">
+                    <font>
+                       <Font name="Jokerman" size="40.0" />
+                   </font>
+                </Label>
+                <ImageView onMouseClicked="#rotateImage"  fx:id="rot" fitHeight="200" fitWidth="200" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+      </AnchorPane >
+   </children>
+</AnchorPane>
